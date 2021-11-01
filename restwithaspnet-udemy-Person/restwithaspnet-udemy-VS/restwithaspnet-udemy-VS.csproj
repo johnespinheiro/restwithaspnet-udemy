@@ -5,4 +5,8 @@
     <RootNamespace>restwithaspnet_udemy_VS</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\Implementations\" />
+  </ItemGroup>
+
 </Project>
