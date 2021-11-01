@@ -19,12 +19,67 @@ namespace restwithaspnet_udemy_VS.Controllers
         }
 
         [HttpGet("sum/{FirstNumber}/{SecondNumber}")]  //segunda parte, onde o 'SUM' o fez encontrar o GET - com os parametros de first e second number
-        public IActionResult Get(string FirstNumber, string SecondNumber)
+        public IActionResult Sum(string FirstNumber, string SecondNumber)
         {
             if (IsNumeric(FirstNumber) && IsNumeric(SecondNumber))
             {
                 var sum = ConvertToDecimal(FirstNumber) + ConvertToDecimal(SecondNumber);
                 return Ok(sum.ToString());
+            }
+            return BadRequest("Invalid Input");
+        }
+
+        [HttpGet("subtraction/{FirstNumber}/{SecondNumber}")]  //segunda parte, onde o 'subtraction' o fez encontrar o GET - com os parametros de first e second number
+        public IActionResult Subtraction(string FirstNumber, string SecondNumber)
+        {
+            if (IsNumeric(FirstNumber) && IsNumeric(SecondNumber))
+            {
+                var sum = ConvertToDecimal(FirstNumber) - ConvertToDecimal(SecondNumber);
+                return Ok(sum.ToString());
+            }
+            return BadRequest("Invalid Input");
+        }
+
+        [HttpGet("multiplication/{FirstNumber}/{SecondNumber}")]  //segunda parte, onde o 'multiplication' o fez encontrar o GET - com os parametros de first e second number
+        public IActionResult Multiplication(string FirstNumber, string SecondNumber)
+        {
+            if (IsNumeric(FirstNumber) && IsNumeric(SecondNumber))
+            {
+                var sum = ConvertToDecimal(FirstNumber) * ConvertToDecimal(SecondNumber);
+                return Ok(sum.ToString());
+            }
+            return BadRequest("Invalid Input");
+        }
+
+        [HttpGet("division/{FirstNumber}/{SecondNumber}")]  //segunda parte, onde o 'division' o fez encontrar o GET - com os parametros de first e second number
+        public IActionResult Division(string FirstNumber, string SecondNumber)
+        {
+            if (IsNumeric(FirstNumber) && IsNumeric(SecondNumber))
+            {
+                var sum = ConvertToDecimal(FirstNumber) / ConvertToDecimal(SecondNumber);
+                return Ok(sum.ToString());
+            }
+            return BadRequest("Invalid Input");
+        }
+
+        [HttpGet("mean/{FirstNumber}/{SecondNumber}")]  //segunda parte, onde o 'mean' o fez encontrar o GET - com os parametros de first e second number
+        public IActionResult Mean(string FirstNumber, string SecondNumber)
+        {
+            if (IsNumeric(FirstNumber) && IsNumeric(SecondNumber))
+            {
+                var sum = (ConvertToDecimal(FirstNumber) + ConvertToDecimal(SecondNumber)) / 2;
+                return Ok(sum.ToString());
+            }
+            return BadRequest("Invalid Input");
+        }
+
+        [HttpGet("square-root/{FirstNumber}")]  //segunda parte, onde o 'square-root' o fez encontrar o GET - com os parametros de first number
+        public IActionResult SquareRoot(string FirstNumber)
+        {
+            if (IsNumeric(FirstNumber))
+            {
+                var squareRoot = Math.Sqrt((double)ConvertToDecimal(FirstNumber)); // logica diferente, usa o Math.sqrt(double)
+                return Ok(squareRoot.ToString());
             }
             return BadRequest("Invalid Input");
         }
