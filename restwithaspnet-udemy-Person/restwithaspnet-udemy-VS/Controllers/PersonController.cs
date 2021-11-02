@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace restwithaspnet_udemy_VS.Controllers
 {
     [ApiController]
-    [Route("[controller]")]  //primeira parte url - pega o controller
+    [Route("api/[controller]")]  //primeira parte url - pega o controller
     public class PersonController : ControllerBase  
     {
         private readonly ILogger<PersonController> _logger;
