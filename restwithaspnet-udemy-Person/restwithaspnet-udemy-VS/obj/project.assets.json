@@ -8,23 +8,23 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\serv-cpd\\.nuget\\packages\\": {},
+    "C:\\Users\\master\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\serv-cpd\\Desktop\\DEV\\apirestwithaspnet-udemy\\restwithaspnet-udemy\\restwithaspnet-udemy-Person\\restwithaspnet-udemy-VS\\restwithaspnet-udemy-VS.csproj",
+      "projectUniqueName": "C:\\Users\\master\\Desktop\\DEV\\restwithaspnet-udemy\\restwithaspnet-udemy\\restwithaspnet-udemy-Person\\restwithaspnet-udemy-VS\\restwithaspnet-udemy-VS.csproj",
       "projectName": "restwithaspnet-udemy-VS",
-      "projectPath": "C:\\Users\\serv-cpd\\Desktop\\DEV\\apirestwithaspnet-udemy\\restwithaspnet-udemy\\restwithaspnet-udemy-Person\\restwithaspnet-udemy-VS\\restwithaspnet-udemy-VS.csproj",
-      "packagesPath": "C:\\Users\\serv-cpd\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\serv-cpd\\Desktop\\DEV\\apirestwithaspnet-udemy\\restwithaspnet-udemy\\restwithaspnet-udemy-Person\\restwithaspnet-udemy-VS\\obj\\",
+      "projectPath": "C:\\Users\\master\\Desktop\\DEV\\restwithaspnet-udemy\\restwithaspnet-udemy\\restwithaspnet-udemy-Person\\restwithaspnet-udemy-VS\\restwithaspnet-udemy-VS.csproj",
+      "packagesPath": "C:\\Users\\master\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\master\\Desktop\\DEV\\restwithaspnet-udemy\\restwithaspnet-udemy\\restwithaspnet-udemy-Person\\restwithaspnet-udemy-VS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\serv-cpd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\master\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
