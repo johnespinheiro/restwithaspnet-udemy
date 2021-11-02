@@ -6,6 +6,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using restwithaspnet_udemy_VS.Services;
+using restwithaspnet_udemy_VS.Services.Implementations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +29,8 @@ namespace restwithaspnet_udemy_VS
         {
 
             services.AddControllers();
+
+            services.AddScoped<IPersonService, PersonServiceImplementation>();  //injecao de dependencia 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
