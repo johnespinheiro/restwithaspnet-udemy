@@ -22,10 +22,11 @@ namespace RestWithASPNETUdemy
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddControllers();
 
-            var Connection = Configuration["MySQLConnection:MySQLConnectionString"];
-            services.AddDbContext<MySQLContext>(options => options.UseMySql(Connection));
+            var connection = Configuration["MySQLConnection:MySQLConnectionString"];
+            services.AddDbContext<MySQLContext>(options => options.UseMySql(connection));
 
             //Dependency Injection
             services.AddScoped<IPersonService, PersonServiceImplementation>();

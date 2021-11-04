@@ -1,4 +1,5 @@
 ﻿using RestWithASPNETUdemy.Model;
+using RestWithASPNETUdemy.Model.Context;
 using System.Collections.Generic;
 using System.Threading;
 
@@ -8,10 +9,12 @@ namespace RestWithASPNETUdemy.Services.Implementations
     {
         // Counter responsible for generating a fake ID
         // since we are not accessing any database
-        private volatile int count;
+        private MysqlContext _Context;
 
-        // Method responsible for creating a new person.
-        // If we had a database this would be the time to persist the data
+    public PersonServiceImplementation(MySQLContext context)
+    {
+            _Context = context;
+    }
         public Person Create(Person person)
         {
             return person;
@@ -27,13 +30,7 @@ namespace RestWithASPNETUdemy.Services.Implementations
         // again this information is mocks
         public List<Person> FindAll()
         {
-            List<Person> persons = new List<Person>();
-            for (int i = 0; i < 8; i++)
-            {
-                Person person = MockPerson(i);
-                persons.Add(person);
-            }
-            return persons;
+            return _Context.Persons.ToList;
         }
 
         // Method responsible for returning a person
